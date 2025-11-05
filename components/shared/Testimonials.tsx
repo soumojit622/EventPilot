@@ -27,7 +27,6 @@ const Testimonials = () => {
     },
   ];
 
-  // Function to get initials
   const getInitials = (name: string) => {
     const words = name.split(" ");
     return words.length > 1
@@ -37,7 +36,6 @@ const Testimonials = () => {
 
   return (
     <section className="container py-20">
-      {/* Section Header */}
       <div className="mx-auto max-w-2xl text-center mb-16">
         <h2 className="mb-4 text-3xl md:text-4xl font-bold text-foreground">
           Trusted by Leading Institutions
@@ -47,35 +45,27 @@ const Testimonials = () => {
         </p>
       </div>
 
-      {/* Testimonials Grid */}
       <div className="grid gap-8 md:grid-cols-3">
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((testimonial) => (
           <Card
             key={testimonial.name}
             className="border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
           >
             <CardContent className="pt-6 relative">
-              {/* Quote icon */}
               <div className="absolute top-4 right-4 opacity-10">
                 <Quote className="h-16 w-16" />
               </div>
 
-              {/* Star rating */}
               <div className="mb-4 flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-4 w-4 text-yellow-400 transition-transform hover:scale-110"
-                  />
+                  <Star key={i} className="h-4 w-4 text-yellow-400" />
                 ))}
               </div>
 
-              {/* Testimonial text */}
               <p className="mb-6 text-muted-foreground italic leading-relaxed">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
-              {/* Avatar + Info */}
               <div className="flex items-center gap-4">
                 <Avatar className="h-12 w-12 border-2 border-primary/20 rounded-full">
                   <AvatarFallback className="bg-primary text-primary-foreground font-semibold">
