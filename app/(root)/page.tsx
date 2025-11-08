@@ -1,6 +1,7 @@
 import CategoryFilter from "@/components/shared/CategoryFilter";
 import Collection from "@/components/shared/Collection";
 import Faq from "@/components/shared/FAQ";
+import Footer from "@/components/shared/Footer";
 import Search from "@/components/shared/Search";
 import Stats from "@/components/shared/Stats";
 import Testimonials from "@/components/shared/Testimonials";
@@ -84,6 +85,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <Stats />
       <Testimonials />
       <Faq />
+      <Footer />
     </>
   );
 }

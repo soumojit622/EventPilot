@@ -37,10 +37,7 @@ const Collection = ({
               const hidePrice = collectionType === "My_Tickets";
 
               return (
-                <li
-                  key={event._id}
-                  className="flex justify-center transition hover:scale-[1.02]"
-                >
+                <li key={event._id} className="flex justify-center transition hover:scale-[1.02]">
                   <Card
                     event={event}
                     hasOrderLink={hasOrderLink}
@@ -67,12 +64,8 @@ const Collection = ({
             <Inbox className="size-8 text-primary" />
           </div>
 
-          <h3 className="text-xl font-semibold text-foreground">
-            {emptyTitle}
-          </h3>
-          <p className="text-sm text-muted-foreground max-w-sm">
-            {emptyStateSubtext}
-          </p>
+          <h3 className="text-xl font-semibold text-foreground">{emptyTitle}</h3>
+          <p className="text-sm text-muted-foreground max-w-sm">{emptyStateSubtext}</p>
         </div>
       )}
     </>

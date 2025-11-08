@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { toast } from "sonner";
-import { Loader2, CheckCircle2, CreditCard } from "lucide-react";
+import confetti from "canvas-confetti";
+import { Loader2, CheckCircle2, CreditCard, TicketIcon } from "lucide-react";
 
 import { IEvent } from "@/lib/database/models/event.model";
 import { Button } from "../ui/button";
@@ -11,7 +12,15 @@ import { checkoutOrder } from "@/lib/actions/order.actions";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
+const Checkout = ({
+  event,
+  userId,
+  hasPurchased,
+}: {
+  event: IEvent;
+  userId: string;
+  hasPurchased: boolean;
+}) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -20,6 +29,13 @@ const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
     if (query.get("success")) {
       toast.success("Ticket purchased successfully!", {
         icon: <CheckCircle2 className="text-green-600" size={18} />,
+      });
+
+      // ✅ Confetti burst animation
+      confetti({
+        particleCount: 200,
+        spread: 70,
+        origin: { y: 0.6 },
       });
     }
 
@@ -31,10 +47,7 @@ const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
   const onCheckout = async () => {
     try {
       setIsLoading(true);
-
-      toast.loading("Redirecting to payment...", {
-        id: "checkout",
-      });
+      toast.loading("Redirecting to payment...", { id: "checkout" });
 
       const order = {
         eventTitle: event.title,
@@ -60,10 +73,15 @@ const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
         type="submit"
         role="link"
         size="lg"
-        disabled={isLoading}
+        disabled={isLoading || hasPurchased}
         className="button sm:w-fit flex items-center gap-2"
       >
-        {isLoading ? (
+        {hasPurchased ? (
+          <>
+            <TicketIcon className="h-5 w-5 text-green-600" />
+            Ticket Purchased
+          </>
+        ) : isLoading ? (
           <>
             <Loader2 className="animate-spin h-5 w-5" />
             Processing...
@@ -80,6 +98,18 @@ const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
           </>
         )}
       </Button>
+
+      {!hasPurchased && !event.isFree && !isLoading && (
+        <div className="mt-3 animate-in fade-in slide-in-from-bottom-1 duration-300">
+          <p
+            className="text-sm text-muted-foreground flex items-center gap-2
+      border border-border/50 bg-gradient-to-br from-muted to-muted/50 px-3 py-2 rounded-lg w-fit shadow-sm"
+          >
+            <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+            You can purchase this ticket only once
+          </p>
+        </div>
+      )}
     </form>
   );
 };

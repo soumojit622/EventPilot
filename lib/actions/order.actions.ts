@@ -166,3 +166,14 @@ export async function getOrdersByUser({
     handleError(error);
   }
 }
+
+
+export const getOrderById = async (orderId: string) => {
+  await connectToDatabase();
+
+  const order = await Order.findById(orderId)
+    .populate("event")
+    .populate("buyer");
+
+  return order;
+};
