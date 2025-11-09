@@ -2,6 +2,8 @@
 
 <p align="center">Modern event management for creators, colleges, communities, and businesses.</p>
 
+## 🧩 Tech Stack
+
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-13.5-blue?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -9,8 +11,8 @@
 [![Stripe](https://img.shields.io/badge/Stripe-6772E5?logo=stripe&logoColor=white)](https://stripe.com/)
 [![Zod](https://img.shields.io/badge/Zod-3E67B1?logoColor=white)](https://zod.dev/)
 [![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?logo=react&logoColor=white)](https://react-hook-form.com/)
-[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge&logoColor=white)](https://ui.shadcn.com/)
-[![uploadthing](https://img.shields.io/badge/uploadthing-000000?style=for-the-badge&logoColor=white)](https://uploadthing.com/)
+[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?logoColor=white)](https://ui.shadcn.com/)
+[![uploadthing](https://img.shields.io/badge/uploadthing-000000?logoColor=white)](https://uploadthing.com/)
 
 ---
 
