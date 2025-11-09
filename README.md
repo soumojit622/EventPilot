@@ -1,16 +1,33 @@
-# 🎯 EventPilot
+<p align="center">
+  <img src="https://via.placeholder.com/1300x450.png?text=EventPilot+-+Smart+Event+Management+Platform" alt="EventPilot Banner" />
+</p>
 
-**EventPilot** is a modern event management platform built for creators, colleges, businesses, and anyone who wants to run events without friction.  
-Publish events, accept registrations, sell tickets, and track payments — all from one clean dashboard.
+<h1 align="center">🎯 EventPilot</h1>
 
-Powered by **Next.js • Clerk • Stripe • TailwindCSS**, the goal is simple: fast performance, smooth UX, and airtight security.
+<p align="center">Modern event management for creators, colleges, communities, and businesses.</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/yourrepo?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/yourrepo?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/yourrepo?style=for-the-badge" />
+  <img src="https://img.shields.io/github/actions/workflow/status/yourrepo/main.yml?style=for-the-badge&label=build" />
+</p>
 
 ---
 
-## 📸 Preview
+## ⚡ Overview
+
+**EventPilot** is a full-featured platform for planning, publishing, and managing events.  
+You can handle registrations, sell tickets, collect payments, and track orders in a clean, fast interface.
+
+Built with **Next.js, Clerk, Stripe, Convex, TailwindCSS**, the platform is production-ready, secure, and designed for real-world usage.
+
+---
+
+## 🎡 Gradient Preview Banner
 
 <p align="center">
-  <img src="https://via.placeholder.com/1200x500.png?text=EventPilot+Banner" alt="EventPilot Banner" width="100%" />
+  <img src="https://via.placeholder.com/1300x350.png/gradient?text=Create.+Publish.+Sell.+Manage." width="100%" />
 </p>
 
 ---
@@ -20,107 +37,85 @@ Powered by **Next.js • Clerk • Stripe • TailwindCSS**, the goal is simple:
 | Category | Technologies |
 |----------|--------------|
 | 🔤 Language | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
-| 🎨 Frontend | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge) |
-| 🖥 Backend | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) |
-| ✅ Forms & Validation | ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge) |
+| 🎨 Frontend | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge) |
+| 🖥 Backend | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) Convex |
+| ✅ Validation & Forms | ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge) |
 | 🔐 Authentication | ![Clerk](https://img.shields.io/badge/Clerk-5A2EF7?style=for-the-badge&logo=clerk&logoColor=white) |
 | 💳 Payments | ![Stripe](https://img.shields.io/badge/Stripe-6772E5?style=for-the-badge&logo=stripe&logoColor=white) |
 | 📁 File Uploads | ![uploadthing](https://img.shields.io/badge/uploadthing-000000?style=for-the-badge) |
 
 ---
 
-## ✨ What It Offers
+## ✅ What It Offers
 
-- Create and publish events with banners, scheduling, and categories  
-- Sell tickets with secure Stripe checkout and webhook verification  
-- Track orders, payments, and attendees  
-- Organizer dashboard for full event control  
-- Smart search + category filtering  
-- Related events for better user discovery  
-- Fast image uploads via uploadthing
-
-Everything is designed to feel smooth, predictable, and production-ready.
-
----
-
-## 🔍 Highlights
-
-- 📱 Responsive across all screen sizes  
-- ⚡ Server components for speed and caching  
-- ♿ Accessible UI with Shadcn + Radix  
-- 🔍 SEO-friendly event pages  
-- ✨ Micro-animations and polished interactions  
-- 🚀 Runs perfectly on Vercel
+- Create, update, schedule and publish events  
+- Upload cover banners and media  
+- Sell tickets through secure Stripe checkout  
+- Real-time validation and error handling  
+- Order history and transaction tracking  
+- Smart search + category filters  
+- Organizer dashboard to manage everything  
+- Recommended events to boost visibility  
 
 ---
 
-## ✅ Where It Fits
+## 🔍 Features You’ll Notice
 
-- Tech events and hackathons  
-- College fests and workshops  
-- Music shows and ticketed performances  
-- Online webinars and virtual meetups  
-- Community gatherings and NGO events  
-- Corporate training and seminars
-
----
-
-## 🎯 Why Choose EventPilot?
-
-- Clean and modern SaaS UI  
-- End-to-end secure payment flow  
-- Developer-friendly structure  
-- Easy to modify or extend  
-- Works at scale with SSR and caching  
-- Completely open-source
+- Fully responsive mobile → desktop  
+- Server Components + caching for speed  
+- Smooth UI motion with Shadcn/Radix  
+- Strong validation powered by Zod  
+- Accessible UI and optimized performance  
+- Ready to deploy on Vercel
 
 ---
 
-## 👥 Ideal Users
+## 🎯 Ideal For
 
-- Students learning full-stack  
-- Developers building SaaS  
-- Event organizers and startups  
-- Colleges and clubs  
-- Businesses that need managed registrations
-
----
-
-## 🛣 Coming Soon
-
-- QR-based ticketing  
-- Email notifications and reminders  
-- Export attendee data (CSV/Excel)  
-- Coupon and discount system  
-- Analytics for organizers  
-- Push/email notification center  
-- Mobile app (iOS + Android)
+- Conferences and tech events  
+- College fests & workshops  
+- Webinars and online training  
+- Community meetups  
+- Business seminars  
+- Ticketed entertainment events
 
 ---
 
-## 🔐 Security
+## 🚧 Roadmap
 
-- Protected routes with Clerk  
-- Stripe checkout + webhook validation  
-- Schema validation via Zod  
-- Owner-only access for event management
+✅ QR-code tickets  
+✅ Email confirmations and reminders  
+✅ Export attendees (CSV / Excel)  
+✅ Coupon and discount system  
+✅ Organizer analytics  
+✅ Notifications center  
+✅ iOS and Android app
+
+---
+
+## 🔐 Security Highlights
+
+- Clerk authentication and role-based access  
+- Stripe payments with webhook verification  
+- Strict Zod validation on every form  
+- Secure file uploads via uploadthing
 
 ---
 
 ## 🤝 Contributing
 
-Bug fixes, new ideas, or improvements are welcome.  
-Open an issue or send a PR — happy to review.
+Pull requests and suggestions are welcome.  
+Spotted an issue? Open one and we’ll review it.
 
 ---
 
 ## 📜 License
 
-Released under **MIT License** © 2025
+MIT License © 2025
 
 ---
 
 ## ⭐ Support
 
-If EventPilot inspired you or helped your work, consider giving the repository a **star**.  
-It makes a huge difference and keeps the project active.
+If you find this useful, give the repository a ⭐.  
+It motivates development and helps the project grow.
