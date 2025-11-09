@@ -1,17 +1,6 @@
-<p align="center">
-  <img src="https://via.placeholder.com/1300x450.png?text=EventPilot+-+Smart+Event+Management+Platform" alt="EventPilot Banner" />
-</p>
-
-<h1 align="center">🎯 EventPilot</h1>
+<h1 align="center">EventPilot</h1>
 
 <p align="center">Modern event management for creators, colleges, communities, and businesses.</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/yourrepo?style=for-the-badge" />
-  <img src="https://img.shields.io/github/forks/yourrepo?style=for-the-badge" />
-  <img src="https://img.shields.io/github/license/yourrepo?style=for-the-badge" />
-  <img src="https://img.shields.io/github/actions/workflow/status/yourrepo/main.yml?style=for-the-badge&label=build" />
-</p>
 
 ---
 
