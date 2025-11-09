@@ -2,15 +2,15 @@
 
 <p align="center">Modern event management for creators, colleges, communities, and businesses.</p>
 
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-13.5-blue?logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Stripe](https://img.shields.io/badge/Stripe-6772E5?logo=stripe&logoColor=white)](https://stripe.com/)
-[![Zod](https://img.shields.io/badge/Zod-3E67B1?logoColor=white)](https://zod.dev/)
-[![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?logo=react&logoColor=white)](https://react-hook-form.com/)
-[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?logoColor=white)](https://ui.shadcn.com/)
-[![Uploadthing](https://img.shields.io/badge/uploadthing-000000?logoColor=white)](https://uploadthing.com/) 
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)  
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![Stripe](https://img.shields.io/badge/Stripe-6772E5?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)  
+[![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge)](https://zod.dev/)  
+[![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=react&logoColor=white)](https://react-hook-form.com/)  
+[![shadcn/ui](https://img.shields.io/badge/shadcn_ui-2563EB?style=for-the-badge)](https://ui.shadcn.com/)  
+[![uploadthing](https://img.shields.io/badge/uploadthing-000000?style=for-the-badge)](https://uploadthing.com/)
 
 ---
 
