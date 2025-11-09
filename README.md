@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 EventPilot
 
-## Getting Started
+EventPilot is a modern event management platform built with **Next.js**, **Convex**, and **Tailwind CSS**.  
+It helps organizers create events, manage attendees, sell tickets, generate AI-powered descriptions, and handle payments with Stripe.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✅ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Create and manage events
+- Ticketing system with Stripe payments
+- AI-powered event description generator
+- Authentication with Clerk
+- Upload media using `utfs.io`
+- Fully responsive UI
+- Modern dashboard and analytics
+- Dark mode + smooth animations
+- Clean and beautiful UX using Tailwind & Shadcn UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠 Tech Stack
 
-## Learn More
+| Category | Tools |
+|----------|-------|
+| Framework | Next.js (App Router) |
+| Backend | Convex |
+| Styling | Tailwind CSS, Shadcn UI |
+| Database | Convex |
+| Auth | Clerk |
+| File Storage | utfs.io |
+| Payments | Stripe |
+| AI | OpenRouter & Gemini |
+| Deployment | Vercel |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✅ Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ✅ Create events
+- ✅ Ticket sales & checkout
+- ✅ AI event description
+- 🔄 Email notifications
+- 🔄 QR-based ticket scanning
+- 🔄 Organizer & attendee dashboards
+- 🔄 Mobile app support
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⭐ Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Pull requests and feature suggestions are welcome.  
+If you find a bug, feel free to open an issue.
+
+---
+
+## 📄 License
+
+MIT License © 2025
+
+---
+
+## ❤️ Support
+
+If you like the project, consider giving it a ⭐ on GitHub.
