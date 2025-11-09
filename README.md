@@ -9,8 +9,9 @@
 [![Stripe](https://img.shields.io/badge/Stripe-6772E5?logo=stripe&logoColor=white)](https://stripe.com/)
 [![Zod](https://img.shields.io/badge/Zod-3E67B1?logoColor=white)](https://zod.dev/)
 [![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?logo=react&logoColor=white)](https://react-hook-form.com/)
-[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?logoColor=white)](https://ui.shadcn.com/)
-[![uploadthing](https://img.shields.io/badge/uploadthing-000000?logoColor=white)](https://uploadthing.com/)
+[![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge&logoColor=white)](https://ui.shadcn.com/)
+[![uploadthing](https://img.shields.io/badge/uploadthing-000000?style=for-the-badge&logoColor=white)](https://uploadthing.com/)
+
 ---
 
 ## ⚡ Overview
