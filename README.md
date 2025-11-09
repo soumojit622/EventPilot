@@ -101,20 +101,35 @@ Built with **Next.js, Clerk, Stripe, Convex, TailwindCSS**, the platform is prod
 
 ---
 
-## 🤝 Contributing
+## 💬 Contribute
 
-Pull requests and suggestions are welcome.  
-Spotted an issue? Open one and we’ll review it.
+We welcome contributions from developers and enthusiasts!  
+
+1. 🍴 Fork the repository.  
+2. 🌿 Create a new branch:  
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. 🖊️ Commit your changes:  
+    ```bash
+    git commit -m "Add your feature"
+    ```
+4. 🚀 Push the branch:  
+    ```bash
+    git push origin feature-branch
+    ```
+5. 🔀 Open a pull request.  
 
 ---
 
-## 📜 License
+## 📬 Contact & Support
+💬 **Questions or suggestions? Reach out!**  
 
-MIT License © 2025
+📧 [soumojitbanerjee22@gmail.com](mailto:soumojitbanerjee22@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/soumojit-banerjee-4914b3228/)  
 
 ---
 
-## ⭐ Support
+## 👨‍💻 Developed by [Soumojit Banerjee](https://www.linkedin.com/in/soumojit-banerjee-4914b3228/)
 
-If you find this useful, give the repository a ⭐.  
-It motivates development and helps the project grow.
+⭐ If you enjoyed using Ivory, give it a star on GitHub!  
