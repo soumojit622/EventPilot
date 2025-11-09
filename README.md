@@ -2,8 +2,6 @@
 
 <p align="center">Modern event management for creators, colleges, communities, and businesses.</p>
 
-## 🧩 Tech Stack
-
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org/)  
 [![Next.js](https://img.shields.io/badge/Next.js-13.5-blue?logo=next.js&logoColor=white)](https://nextjs.org/)  
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
