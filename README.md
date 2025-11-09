@@ -7,6 +7,14 @@ Powered by **Next.js • Node.js • Clerk • Stripe • TailwindCSS**, EventPi
 
 ---
 
+### 📸 Preview
+
+<p align="center">
+  <img src="https://via.placeholder.com/1200x500.png?text=EventPilot+Banner" alt="EventPilot Banner" width="100%" />
+</p>
+
+---
+
 ## 🧩 Tech Stack
 
 | Category | Technologies |
