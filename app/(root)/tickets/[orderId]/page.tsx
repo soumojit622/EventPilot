@@ -40,29 +40,21 @@ export default async function TicketPage({ params }: TicketPageProps) {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 relative bg-background">
-      {/* Background shapes */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.08] bg-[radial-gradient(circle_at_top_left,theme(colors.primary)/20%,transparent_60%)]" />
-      <div className="absolute inset-0 pointer-events-none opacity-[0.06] bg-[radial-gradient(circle_at_bottom_right,theme(colors.indigo.500)/15%,transparent_65%)]" />
-
       <div className="w-full max-w-4xl relative">
         <div
           id="ticket-container"
           className="
-        relative bg-card border border-border rounded-3xl shadow-[0_5px_25px_-8px_rgba(0,0,0,0.25)]
-        overflow-hidden
-      "
+            relative bg-card border border-border rounded-3xl shadow-[0_5px_25px_-8px_rgba(0,0,0,0.25)]
+            overflow-hidden
+          "
         >
-          {/* Foil strip */}
           <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-yellow-400 via-purple-500 to-pink-500 animate-pulse" />
 
-          {/* Perforated ticket holes */}
           <div className="absolute -left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-background border border-border"></div>
           <div className="absolute -right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-background border border-border"></div>
 
           <div className="flex flex-col lg:flex-row">
-            {/* LEFT PANEL */}
             <div className="flex-1 p-6 sm:p-8 space-y-6">
-              {/* Event image */}
               <div className="relative h-44 sm:h-52 w-full rounded-xl overflow-hidden">
                 <Image
                   src={event.imageUrl}
@@ -81,7 +73,6 @@ export default async function TicketPage({ params }: TicketPageProps) {
                 </div>
               </div>
 
-              {/* Details grid */}
               <div className="grid grid-cols-2 gap-4 bg-muted/40 border border-border rounded-xl p-5 text-sm">
                 <div>
                   <div className="flex items-center gap-2 text-muted-foreground text-xs">
@@ -114,7 +105,6 @@ export default async function TicketPage({ params }: TicketPageProps) {
                 </div>
               </div>
 
-              {/* Seat/Gate/Entry */}
               <div className="grid grid-cols-3 text-center bg-muted/70 border border-border rounded-xl p-4 text-sm">
                 <div>
                   <p className="font-semibold">Gate</p>
@@ -132,7 +122,6 @@ export default async function TicketPage({ params }: TicketPageProps) {
                 </div>
               </div>
 
-              {/* Small meta */}
               <div className="text-[10px] text-muted-foreground space-y-1 mt-2">
                 <div className="flex items-center gap-1">
                   <ShieldCheck className="w-3 h-3 text-green-600" />
@@ -145,7 +134,6 @@ export default async function TicketPage({ params }: TicketPageProps) {
               </div>
             </div>
 
-            {/* RIGHT SIDE STUB */}
             <div className="w-full lg:w-[260px] bg-muted/30 border-l border-dashed border-border flex flex-col items-center justify-center p-6 gap-6">
               <div className="bg-background rounded-xl border border-border shadow p-3">
                 <QRCode value={qrValue} size={110} />
@@ -157,20 +145,22 @@ export default async function TicketPage({ params }: TicketPageProps) {
                 {event.isFree ? "FREE" : `₹${event.price}`}
               </p>
 
-              <DownloadTicketButton fileName={`Ticket-${order._id}`} />
-
               <p className="text-[9px] text-muted-foreground text-center leading-tight">
                 Entry allowed once. Carry valid ID proof.
               </p>
             </div>
           </div>
 
-          {/* TERMS */}
           <div className="flex items-center gap-2 text-[10px] bg-muted/90 border-t border-border px-6 py-3 text-muted-foreground">
             <Info className="h-3 w-3" />
             Non-refundable unless event is cancelled. Resale or duplication
             prohibited.
           </div>
+        </div>
+
+        {/* ✅ BUTTON OUTSIDE TICKET */}
+        <div className="flex justify-center mt-4">
+          <DownloadTicketButton fileName={`Ticket-${order._id}`} />
         </div>
 
         <p className="text-center mt-3 text-[11px] text-muted-foreground">

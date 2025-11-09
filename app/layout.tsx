@@ -1,45 +1,46 @@
-import { ClerkProvider } from '@clerk/nextjs'
-import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-import { Toaster } from 'sonner'
-import './globals.css'
-import BackToTopButton from '@/components/BacktoTop'
+import { ClerkProvider } from "@clerk/nextjs";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import { Toaster } from "sonner";
+import "./globals.css";
+import BackToTopButton from "@/components/BacktoTop";
+import FloatingChatbot from "@/components/ChatBot";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-})
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
-  title: 'EventPilot — Intelligent Campus Event Planner',
-  description: 'AI-enhanced scheduling and event coordination designed for modern educational institutions.',
+  title: "EventPilot — Intelligent Campus Event Planner",
+  description:
+    "AI-enhanced scheduling and event coordination designed for modern educational institutions.",
   keywords: [
-    'EventPilot',
-    'college event planner',
-    'campus scheduler',
-    'AI event management',
-    'university event system',
-    'smart scheduling'
+    "EventPilot",
+    "college event planner",
+    "campus scheduler",
+    "AI event management",
+    "university event system",
+    "smart scheduling",
   ],
   authors: [
     {
-      name: 'Soumojit Banerjee',
-      url: 'https://github.com/soumojit622',
+      name: "Soumojit Banerjee",
+      url: "https://github.com/soumojit622",
     },
   ],
-  creator: 'soumojit622',
-  metadataBase: new URL('https://github.com/soumojit622'),
+  creator: "soumojit622",
+  metadataBase: new URL("https://github.com/soumojit622"),
   icons: {
-    icon: '/logo.svg',
+    icon: "/logo.svg",
   },
-}
-
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <ClerkProvider
@@ -53,8 +54,7 @@ export default function RootLayout({
         },
         elements: {
           // Glassy Auth Card
-          card:
-            "backdrop-blur-2xl bg-black/40 border border-white/10 shadow-xl p-6 md:p-8",
+          card: "backdrop-blur-2xl bg-black/40 border border-white/10 shadow-xl p-6 md:p-8",
 
           headerTitle: "text-white font-semibold text-3xl tracking-tight",
           headerSubtitle: "text-gray-300 text-sm",
@@ -73,8 +73,7 @@ export default function RootLayout({
           // Divider between Social and Email Login
           dividerRow:
             "my-6 flex items-center w-full before:flex-1 after:flex-1 before:h-px after:h-px before:bg-white/20 after:bg-white/20",
-          dividerText:
-            "px-3 text-gray-300 text-xs uppercase tracking-wide",
+          dividerText: "px-3 text-gray-300 text-xs uppercase tracking-wide",
 
           // Primary Submit Button
           formButtonPrimary:
@@ -86,15 +85,15 @@ export default function RootLayout({
         },
       }}
     >
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body className={poppins.variable}>
           <div className="inset-0 bg-[url('/bg1.jpg')] opacity-50 fixed -z-10" />
           {children}
           <Toaster richColors closeButton />
           <BackToTopButton />
+          <FloatingChatbot />
         </body>
       </html>
     </ClerkProvider>
-
-  )
+  );
 }

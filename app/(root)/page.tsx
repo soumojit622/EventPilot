@@ -41,7 +41,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
               asChild
               className="button w-full sm:w-fit flex items-center gap-2"
             >
-              <Link href="/events">
+              <Link href="#events">
                 <SearchIcon className="w-5 h-5" />
                 Explore Events
               </Link>

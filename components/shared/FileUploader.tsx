@@ -8,6 +8,7 @@ import { generateClientDropzoneAccept } from "uploadthing/client";
 
 import { Button } from "@/components/ui/button";
 import { convertFileToUrl } from "@/lib/utils";
+import Image from "next/image";
 
 type FileUploaderProps = {
   onFieldChange: (url: string) => void;
@@ -45,22 +46,25 @@ export function FileUploader({
       <input {...getInputProps()} className="cursor-pointer" />
 
       {imageUrl ? (
-        <div className="h-full w-full overflow-hidden rounded-xl">
-          <img
+        <div className="relative h-full w-full overflow-hidden rounded-xl">
+          <Image
             src={imageUrl}
             alt="Uploaded"
-            className="h-full w-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
       ) : (
         <div className="flex-center flex-col text-muted-foreground py-6">
-          <img
-            src="/assets/icons/upload.svg"
-            width={60}
-            height={60}
-            alt="Upload"
-            className="opacity-60 transition-all group-hover:scale-105"
-          />
+          <div className="relative w-15 h-15">
+            <Image
+              src="/assets/icons/upload.svg"
+              alt="Upload"
+              fill
+              className="opacity-60 transition-all group-hover:scale-105 object-contain"
+            />
+          </div>
 
           <p className="mt-4 text-sm text-foreground font-medium">
             Drag & drop or click to upload

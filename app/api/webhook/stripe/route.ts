@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import stripe from "stripe";
 import { NextResponse } from "next/server";
 import { createOrder } from "@/lib/actions/order.actions";
@@ -16,10 +18,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Webhook error", error: err });
   }
 
-  // Get the ID and type
   const eventType = event.type;
 
-  // CREATE
   if (eventType === "checkout.session.completed") {
     const { id, amount_total, metadata } = event.data.object;
 

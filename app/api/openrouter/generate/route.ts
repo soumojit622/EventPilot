@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 
 type Body = {
@@ -28,7 +30,7 @@ export async function POST(req: Request) {
         const systemPrompt =
             "You write grammatically correct event descriptions in plain text. No markdown, no emojis, no symbols. Maximum 400 characters.";
 
-        const userPrompt = `Write a ${tone} event description for the event titled: "${title}". Only plain text, no bullets or markdown.`
+        const userPrompt = `Write a ${tone} event description for the event titled: "${title}". Only plain text, no bullets or markdown.`;
 
         const payload = {
             model: "openai/gpt-4o",
@@ -81,7 +83,6 @@ export async function POST(req: Request) {
             clean = clean.slice(0, 400);
         }
 
-        // ✅ return exactly what frontend expects
         return NextResponse.json({ description: clean });
 
     } catch (err: any) {

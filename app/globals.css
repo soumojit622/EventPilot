@@ -1,7 +1,14 @@
+/* --------------------------------------------------
+   Tailwind Base Layers
+   -------------------------------------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* --------------------------------------------------
+   Global CSS Variables (Light + Dark Mode)
+   Controls colors, foregrounds, borders, and radii
+   -------------------------------------------------- */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -35,6 +42,7 @@
     --radius: 0.5rem;
   }
 
+  /* Dark mode palette override */
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -66,6 +74,9 @@
   }
 }
 
+/* --------------------------------------------------
+   Reset + Global Element Styling
+   -------------------------------------------------- */
 * {
   list-style: none;
   padding: 0;
@@ -77,12 +88,16 @@ body {
   font-family: var(--font-poppins);
 }
 
+/* Icon color filter utility */
 .filter-grey {
   filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(217%)
     hue-rotate(32deg) brightness(98%) contrast(92%);
 }
 
-/* ========================================== TAILWIND STYLES */
+/* --------------------------------------------------
+   Custom Tailwind Utility Classes
+   Layout, Typography, Flex helpers, Containers
+   -------------------------------------------------- */
 @layer utilities {
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
@@ -96,116 +111,105 @@ body {
     @apply flex justify-between items-center;
   }
 
-  /* TYPOGRAPHY */
-  /* 64 */
+  /* ---------------- Typography Scale ---------------- */
   .h1-bold {
-    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px] xl:text-[58px] xl:leading-[74px];
+    @apply font-bold text-[40px] leading-[48px]
+      lg:text-[48px] lg:leading-[60px]
+      xl:text-[58px] xl:leading-[74px];
   }
 
-  /* 40 */
   .h2-bold {
-    @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+    @apply font-bold text-[32px] leading-[40px]
+      lg:text-[36px] lg:leading-[44px]
+      xl:text-[40px] xl:leading-[48px];
   }
 
   .h2-medium {
-    @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+    @apply font-medium text-[32px] leading-[40px]
+      lg:text-[36px] lg:leading-[44px]
+      xl:text-[40px] xl:leading-[48px];
   }
 
-  /* 36 */
   .h3-bold {
-    @apply font-bold text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+    @apply font-bold text-[28px] leading-[36px]
+      md:text-[36px] md:leading-[44px];
   }
 
   .h3-medium {
-    @apply font-medium text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+    @apply font-medium text-[28px] leading-[36px]
+      md:text-[36px] md:leading-[44px];
   }
 
-  /* 32 */
   .h4-medium {
     @apply font-medium text-[32px] leading-[40px];
   }
 
-  /* 28 */
   .h5-bold {
     @apply font-bold text-[28px] leading-[36px];
   }
 
-  /* 24 */
+  /* Paragraph Styles */
   .p-bold-24 {
     @apply font-bold text-[24px] leading-[36px];
   }
-
   .p-medium-24 {
     @apply font-medium text-[24px] leading-[36px];
   }
-
   .p-regular-24 {
     @apply font-normal text-[24px] leading-[36px];
   }
 
-  /* 20 */
   .p-bold-20 {
     @apply font-bold text-[20px] leading-[30px] tracking-[0.02em];
   }
-
   .p-semibold-20 {
-    @apply text-[20px] font-semibold leading-[30px] tracking-[0.02em];
+    @apply font-semibold text-[20px] leading-[30px] tracking-[0.02em];
   }
-
   .p-medium-20 {
-    @apply text-[20px] font-medium leading-[30px];
+    @apply font-medium text-[20px] leading-[30px];
   }
-
   .p-regular-20 {
-    @apply text-[20px] font-normal leading-[30px] tracking-[0.02em];
+    @apply font-normal text-[20px] leading-[30px] tracking-[0.02em];
   }
 
-  /* 18 */
   .p-semibold-18 {
-    @apply text-[18px] font-semibold leading-[28px] tracking-[0.02em];
+    @apply font-semibold text-[18px] leading-[28px] tracking-[0.02em];
   }
-
   .p-medium-18 {
-    @apply text-[18px] font-medium leading-[28px];
+    @apply font-medium text-[18px] leading-[28px];
   }
-
   .p-regular-18 {
-    @apply text-[18px] font-normal leading-[28px] tracking-[0.02em];
+    @apply font-normal text-[18px] leading-[28px] tracking-[0.02em];
   }
 
-  /* 16 */
   .p-bold-16 {
-    @apply text-[16px] font-bold leading-[24px];
+    @apply font-bold text-[16px] leading-[24px];
   }
-
   .p-medium-16 {
-    @apply text-[16px] font-medium leading-[24px];
+    @apply font-medium text-[16px] leading-[24px];
   }
-
   .p-regular-16 {
-    @apply text-[16px] font-normal leading-[24px];
+    @apply font-normal text-[16px] leading-[24px];
   }
 
-  /* 14 */
   .p-semibold-14 {
-    @apply text-[14px] font-semibold leading-[20px];
+    @apply font-semibold text-[14px] leading-[20px];
   }
-
   .p-medium-14 {
-    @apply text-[14px] font-medium leading-[20px];
+    @apply font-medium text-[14px] leading-[20px];
   }
-
   .p-regular-14 {
-    @apply text-[14px] font-normal leading-[20px];
+    @apply font-normal text-[14px] leading-[20px];
   }
 
-  /* 12 */
   .p-medium-12 {
-    @apply text-[12px] font-medium leading-[20px];
+    @apply font-medium text-[12px] leading-[20px];
   }
 }
 
-/* ========================================== CLERK STYLES */
+/* --------------------------------------------------
+   Clerk Component Styling
+   -------------------------------------------------- */
 .cl-logoImage {
   height: 38px;
 }
@@ -228,7 +232,9 @@ body {
   background-color: #705cf7;
 }
 
-/* ========================================== REACT-DATEPICKER STYLES */
+/* --------------------------------------------------
+   React DatePicker Styling
+   -------------------------------------------------- */
 .datePicker {
   width: 100%;
 }
@@ -248,4 +254,30 @@ body {
 
 .react-datepicker__time-list-item--selected {
   background-color: #624cf5 !important;
+}
+
+/* --------------------------------------------------
+   Global Scrollbar (Chrome, Safari, Edge)
+   -------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #705cf7;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a48e6;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #705cf7 rgba(0, 0, 0, 0.08);
 }

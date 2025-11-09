@@ -5,9 +5,17 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "utfs.io",
-        port: "",
       },
     ],
+  },
+
+  webpack: (config) => {
+    // Use memory cache instead of filesystem pack cache
+    config.cache = {
+      type: "memory",
+    };
+
+    return config;
   },
 };
 
