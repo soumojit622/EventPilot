@@ -28,7 +28,7 @@ Built with **Next.js, Clerk, Stripe, Convex, TailwindCSS**, the platform is prod
 ## 🎡 Gradient Preview Banner
 
 <p align="center">
-  <img src="https://via.placeholder.com/1300x350.png/gradient?text=Create.+Publish.+Sell.+Manage." width="100%" />
+  <img src="https://github.com/soumojit622/EventPilot/blob/master/public/banner.jpg" width="100%" />
 </p>
 
 ---
