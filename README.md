@@ -39,7 +39,7 @@ Built with **Next.js, Clerk, Stripe, Convex, TailwindCSS**, the platform is prod
 |----------|--------------|
 | 🔤 Language | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
 | 🎨 Frontend | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge) |
-| 🖥 Backend | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) Convex |
+| 🖥 Backend | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) |
 | ✅ Validation & Forms | ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white) ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge) |
 | 🔐 Authentication | ![Clerk](https://img.shields.io/badge/Clerk-5A2EF7?style=for-the-badge&logo=clerk&logoColor=white) |
 | 💳 Payments | ![Stripe](https://img.shields.io/badge/Stripe-6772E5?style=for-the-badge&logo=stripe&logoColor=white) |
