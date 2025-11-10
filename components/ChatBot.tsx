@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useUser } from "@clerk/nextjs";
 
 export default function FloatingChatbot() {
-  const { isSignedIn } = useUser(); 
+  const { isSignedIn } = useUser();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
