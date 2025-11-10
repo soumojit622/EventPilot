@@ -3,8 +3,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Send, X } from "lucide-react";
 import Image from "next/image";
+import { useUser } from "@clerk/nextjs";
 
 export default function FloatingChatbot() {
+  const { isSignedIn } = useUser(); 
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
@@ -70,6 +72,9 @@ export default function FloatingChatbot() {
 
     setLoading(false);
   };
+
+  // Only show the chatbot if the user is signed in
+  if (!isSignedIn) return null;
 
   return (
     <>
